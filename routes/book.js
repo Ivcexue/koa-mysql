@@ -6,6 +6,9 @@ router.get('/list', (ctx) => {
   ctx.body = {
     key: 'book api',
   }
+  // if(!a) {
+  //   throw new Error()
+  // }
 })
 
 module.exports = router

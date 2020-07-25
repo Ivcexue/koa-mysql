@@ -2,7 +2,7 @@
  * @Author: Ives-xue
  * @Date: 2020-07-23 14:13:58
  * @LastEditTime: 2020-07-23 14:30:53
- * @LastEditors: Please set LastEditors
+ * @LastEditors: 初始化自动导入路由
  */
 
 const requireDirectory = require('require-directory')
