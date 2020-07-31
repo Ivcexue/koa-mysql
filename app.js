@@ -8,6 +8,7 @@ const router = new Router()
 
 const PORT = process.env.PORT || 3001
 // db.initMogo()
+// db.initMysql()
 
 app.use(catchError)
 

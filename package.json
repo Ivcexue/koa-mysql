@@ -13,6 +13,7 @@
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^9.1.0",
     "mongoose": "^5.9.25",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.4",
     "require-directory": "^2.1.1"
   }

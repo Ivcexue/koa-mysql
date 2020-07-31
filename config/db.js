@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+const mysql = require('mysql')
 class MongoConnect {
   initMogo() {
     mongoose
@@ -10,6 +10,20 @@ class MongoConnect {
       .catch((err) => {
         console.log(err)
       })
+  }
+
+  initMysql() {
+    let connection = mysql.createConnection({
+      host: 'localhost',
+      user: 'root',
+      password: 'lerd08',
+      database: 'test',
+    })
+    connection.connect()
+    connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+      if (error) throw error;
+      console.log('The solution is: ', results[0].solution);
+    });
   }
 }
 
